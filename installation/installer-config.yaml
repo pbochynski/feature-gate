@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: installation-config-overrides
+  namespace: kyma-installer
+  labels:
+    installer: overrides
+data:
+  global.feature.knative: "false"
+  global.feature.xyz: "false"
